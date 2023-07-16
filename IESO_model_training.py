@@ -145,7 +145,10 @@ torch.manual_seed(seed)
 pyro.set_rng_seed(seed)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+
+#change these params to adjust model
 num_topics = 20 if not smoke_test else 3
+
 docs = docs.float().to(device)
 batch_size = 32
 learning_rate = 1e-3

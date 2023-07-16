@@ -62,8 +62,10 @@ from scipy import sparse
 numpy_array = docs.numpy()
 docs_sparse = sparse.csr_matrix(numpy_array)
 
-coherence, diversity, quality, all_cohs = topic_metrics.topic_eval(ref_bows=docs_sparse, all_topic_ixs=topic_terms)
+diversity, coherence, quality, all_cohs = topic_metrics.topic_eval(ref_bows=docs_sparse, all_topic_ixs=topic_terms)
 #print(coherence, diversity, quality, all_cohs)
+print("coherence: ", coherence)
+print("diversity: ", diversity)
 
 topic_word_distributions = prodLDA.decoder.beta.weight.cpu().detach().numpy()
 
@@ -77,7 +79,7 @@ for topic in range(num_topics):
     top_words = [vocab.loc[vocab['index'] == word_index, 'word'].values[0] for word_index in top_word_indices]
     top_words_per_topic.append(top_words)
 
-print(top_words_per_topic)
+#print(top_words_per_topic)
 
 
 # plot word cloud
