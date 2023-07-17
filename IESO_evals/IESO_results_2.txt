@@ -1,0 +1,5 @@
+Results for 2: 
+coherence: 0.06916043698434576 
+diversity: 0.8 
+
+[['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['best', 'bad'], ['bad', 'best'], ['best', 'bad'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['bad', 'best'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best'], ['best', 'bad'], ['bad', 'best']]
