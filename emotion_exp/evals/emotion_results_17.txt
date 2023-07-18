@@ -1,0 +1,5 @@
+Results for 17: 
+coherence: 0.11649068528021252 
+diversity: 0.8941176470588236 
+
+[['highschool', 'blame', 'sadness', 'happier', 'understood'], ['dog', 'miss', 'passed', 'away', 'old'], ['got', 'day', 'work', 'night', 'going'], ['said', 'asked', 'told', 'went', 'time'], ['angry', 'anger', 'rage', 'control', 'issues'], ['dreams', 'campus', 'members', 'grief', 'parent'], ['feel', 'think', 'sad', 'make', 'life'], ['anxiety', 'anxious', 'attack', 'panic', 'feeling'], ['relationship', 'time', 'months', 'tl', 'want'], ['miscarriage', 'ultrasound', 'bleeding', 'weeks', 'levels'], ['fucking', 'shit', 'fuck', 'damn', 'just'], ['feel', 'im', 'school', 'friends', 'people'], ['friend', 'friends', 'best', 'really', 'girl'], ['angry', 'things', 'people', 'anger', 'say'], ['ask', 'interested', 'conversations', 'tl', 'kind'], ['family', 'parents', 'sister', 'money', 'mother'], ['life', 'lost', 'dad', 'feel', 'years']]

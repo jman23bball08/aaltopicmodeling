@@ -1,0 +1,5 @@
+Results for 14: 
+coherence: 0.11719486649599001 
+diversity: 0.9285714285714286 
+
+[['tickets', 'begged', 'comment', 'disgusting', 'shitty'], ['people', 'feel', 'dont', 'im', 'life'], ['angry', 'anger', 'control', 'things', 'rage'], ['anxiety', 'sleep', 'feeling', 'panic', 'attack'], ['fucking', 'school', 'fuck', 'shit', 'ca'], ['said', 'girl', 'told', 'friend', 'guy'], ['relationship', 'family', 'dr', 'parents', 'tl'], ['feel', 'time', 'want', 'love', 'relationship'], ['true', 'sadness', 'suffering', 'waiting', 'dream'], ['lost', 'ago', 'feel', 'died', 'dad'], ['baby', 'weeks', 'today', 'pregnant', 'miscarriage'], ['does', 'similar', 'xanax', 'hi', 'read'], ['miss', 'away', 'dog', 'day', 'passed'], ['friends', 'friend', 'boyfriend', 'dr', 'think']]

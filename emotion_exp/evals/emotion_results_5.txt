@@ -1,0 +1,5 @@
+Results for 5: 
+coherence: 0.05799412164977773 
+diversity: 1.0 
+
+[['morning', 'cat', 'loved', 'happened', 'days'], ['happening', 'mad', 'triggers', 'mental', 'manage'], ['feel', 'want', 'time', 'things', 'anxiety'], ['look', 'tired', 'world', 'deserve', 'shit'], ['dr', 'relationship', 'boyfriend', 'tl', 'ex']]

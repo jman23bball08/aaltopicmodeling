@@ -1,0 +1,5 @@
+Results for 19: 
+coherence: 0.13626368394650595 
+diversity: 0.8842105263157894 
+
+[['love', 'relationship', 'want', 'dr', 'tl'], ['pregnant', 'pregnancy', 'test', 'ultrasound', 'bleeding'], ['anxiety', 'panic', 'medication', 'attacks', 'taking'], ['feel', 'people', 'sad', 'im', 'talk'], ['said', 'told', 'asked', 'went', 'got'], ['friends', 'friend', 'girl', 'really', 'best'], ['fucking', 'fuck', 'shit', 'hate', 'just'], ['miss', 'eyes', 'sweet', 'loved', 'vet'], ['acting', 'damn', 'chill', 'driving', 'actively'], ['day', 'house', 'home', 'year', 'dog'], ['dr', 'tl', 'guy', 'relationship', 'dating'], ['work', 'job', 'time', 'going', 'school'], ['important', 'happiness', 'attempted', 'responsibilities', 'crisis'], ['funeral', 'family', 'death', 'father', 'grief'], ['anger', 'angry', 'things', 'rage', 'mad'], ['night', 'sleep', 'feeling', 'heart', 'chest'], ['days', 'ago', 'going', 'went', 'day'], ['life', 'feel', 'lost', 'years', 'dad'], ['anger', 'want', 'things', 'angry', 'help']]

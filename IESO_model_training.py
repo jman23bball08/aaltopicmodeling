@@ -166,6 +166,8 @@ for incr in range(1,51):
     )
     prodLDA.to(device)
 
+    print(num_topics)
+
     optimizer = pyro.optim.Adam({"lr": learning_rate})
     svi = SVI(prodLDA.model, prodLDA.guide, optimizer, loss=TraceMeanField_ELBO())
     num_batches = int(math.ceil(docs.shape[0] / batch_size)) if not smoke_test else 1

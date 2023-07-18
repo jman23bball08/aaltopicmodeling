@@ -1,0 +1,5 @@
+Results for 9: 
+coherence: 0.0691635291229187 
+diversity: 1.0 
+
+[['day', 'work', 'got', 'baby', 'weeks'], ['dr', 'tl', 'relationship', 'girl', 'girlfriend'], ['really', 'school', 'friends', 'im', 'year'], ['angry', 'fucking', 'shit', 'anger', 'hate'], ['feel', 'want', 'people', 'way', 'things'], ['moment', 'beautiful', 'look', 'forever', 'light'], ['mom', 'family', 'lost', 'passed', 'brother'], ['career', 'write', 'original', 'graduated', 'liking'], ['anxiety', 'anxious', 'panic', 'attacks', 'attack']]

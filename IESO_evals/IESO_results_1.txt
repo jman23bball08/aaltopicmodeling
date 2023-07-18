@@ -2,4 +2,4 @@ Results for 1:
 coherence: 0.011162217589627155 
 diversity: 1.0 
 
-[['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad'], ['bad']]
+[['hard', 'way', 'person', 'think', 'work']]

@@ -29,8 +29,9 @@ def process(text):
     stop_words = stopwords.words("english")
     all_emojis = list(emoji.unicode_codes._EMOJI_UNICODE.values())
 
-    #remove stopwords, punctuation, and turn to lowercase
-    tokens = [token.lower() for token in tokens if token not in stop_words and token not in punc and token not in all_emojis]
+    #remove stopwords, punctuation, numbers, and turn to lowercase
+    tokens = [token.lower() for token in tokens if token not in stop_words and token not in punc and token not in all_emojis and token.isalpha()]
+
 
     return tokens
 
@@ -47,6 +48,8 @@ vocab['index'] = vocab.index
 
 print('Dictionary size: %d' % len(vocab))
 print('Corpus size: {}'.format(docs.shape))
+
+#print(vocab)
 
 assert pyro.__version__.startswith('1.8.5')
 # Enable smoke test - run the notebook cells on CI.

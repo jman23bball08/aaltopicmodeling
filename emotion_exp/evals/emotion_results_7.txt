@@ -1,0 +1,5 @@
+Results for 7: 
+coherence: 0.10921200813072877 
+diversity: 1.0 
+
+[['damn', 'na', 'gon', 'use', 'taking'], ['anxiety', 'going', 'work', 'sleep', 'anxious'], ['angry', 'lose', 'things', 'anger', 'control'], ['tl', 'girl', 'ex', 'said', 'friend'], ['family', 'old', 'dog', 'dad', 'miss'], ['friends', 'really', 'feel', 'want', 'love'], ['dream', 'forever', 'hugs', 'impact', 'tonight']]

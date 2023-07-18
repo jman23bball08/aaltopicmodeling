@@ -1,0 +1,5 @@
+Results for 10: 
+coherence: 0.11958716290982498 
+diversity: 0.98 
+
+[['home', 'mom', 'family', 'told', 'said'], ['feel', 'want', 'love', 'life', 'happy'], ['anxiety', 'panic', 'attack', 'attacks', 'anxious'], ['expected', 'second', 'period', 'pregnancy', 'share'], ['ghosted', 'graduate', 'senior', 'friendships', 'tv'], ['fucking', 'fuck', 'shit', 'hate', 'im'], ['dog', 'pain', 'day', 'miss', 'passed'], ['relationship', 'dr', 'tl', 'guy', 'months'], ['really', 'feel', 'things', 'time', 'help'], ['control', 'angry', 'deal', 'lose', 'anger']]

@@ -1,0 +1,5 @@
+Results for 2: 
+coherence: 0.01592964107818821 
+diversity: 0.9 
+
+[['need', 'job', 'felt', 'probably', 'got'], ['family', 'felt', 'feel', 'want', 'advice']]

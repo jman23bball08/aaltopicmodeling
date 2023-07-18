@@ -1,0 +1,5 @@
+Results for 4: 
+coherence: 0.04315963715413859 
+diversity: 1.0 
+
+[['feel', 'anxiety', 'life', 'people', 'help'], ['friends', 'dr', 'friend', 'tl', 'girl'], ['cried', 'dog', 'working', 'car', 'morning'], ['type', 'game', 'doubt', 'career', 'crazy']]

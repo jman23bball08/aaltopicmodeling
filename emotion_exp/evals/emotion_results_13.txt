@@ -1,0 +1,5 @@
+Results for 13: 
+coherence: 0.0957695716596922 
+diversity: 0.9230769230769231 
+
+[['people', 'im', 'fucking', 'want', 'hate'], ['want', 'things', 'relationship', 'time', 'feel'], ['girl', 'really', 'friend', 'said', 'told'], ['flirty', 'gift', 'enjoying', 'highschool', 'rejection'], ['anxiety', 'panic', 'attacks', 'medication', 'help'], ['angry', 'anger', 'control', 'things', 'rage'], ['love', 'life', 'feel', 'think', 'miss'], ['pregnant', 'period', 'pregnancy', 'loss', 'ultrasound'], ['mom', 'dog', 'home', 'day', 'house'], ['work', 'sleep', 'week', 'job', 'going'], ['life', 'friends', 'years', 'year', 'mom'], ['damn', 'ass', 'buy', 'oh', 'fuck'], ['tl', 'dr', 'dating', 'ex', 'girlfriend']]

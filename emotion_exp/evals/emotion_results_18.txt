@@ -1,0 +1,5 @@
+Results for 18: 
+coherence: 0.12102787988687852 
+diversity: 0.8666666666666667 
+
+[['angry', 'anger', 'hurt', 'way', 'things'], ['relationship', 'dr', 'sex', 'tl', 'boyfriend'], ['feel', 'people', 'want', 'talk', 'really'], ['sad', 'happy', 'life', 'anymore', 'im'], ['music', 'dead', 'eyes', 'dream', 'woke'], ['confidence', 'downhill', 'giving', 'study', 'frustrating'], ['anger', 'help', 'angry', 'things', 'game'], ['court', 'opinion', 'uncle', 'comment', 'number'], ['felt', 'really', 'got', 'feel', 'day'], ['fucking', 'fuck', 'shit', 'hate', 'stupid'], ['friend', 'friends', 'really', 'girl', 'talking'], ['friends', 'relationship', 'want', 'year', 'years'], ['anxiety', 'panic', 'attack', 'attacks', 'symptoms'], ['job', 'work', 'going', 'school', 'hours'], ['weeks', 'pregnant', 'baby', 'ultrasound', 'bleeding'], ['miss', 'dog', 'old', 'home', 'vet'], ['dad', 'family', 'mom', 'years', 'lost'], ['said', 'told', 'home', 'asked', 'dr']]

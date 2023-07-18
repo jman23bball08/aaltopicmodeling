@@ -1,0 +1,5 @@
+Results for 15: 
+coherence: 0.09857173466316237 
+diversity: 0.88 
+
+[['miss', 'pain', 'day', 'love', 'wish'], ['week', 'got', 'days', 'went', 'going'], ['anger', 'angry', 'things', 'control', 'rage'], ['fucking', 'work', 'home', 'fuck', 'car'], ['social', 'partner', 'sort', 'guys', 'issue'], ['medication', 'meds', 'attack', 'taking', 'attacks'], ['time', 'relationship', 'want', 'job', 'things'], ['fucking', 'hate', 'god', 'shit', 'fuck'], ['cold', 'tears', 'floor', 'kitchen', 'accident'], ['feel', 'ca', 'things', 'life', 'help'], ['relationship', 'boyfriend', 'dr', 'friend', 'tl'], ['girl', 'said', 'went', 'guy', 'friend'], ['friends', 'feel', 'friend', 'im', 'really'], ['crisis', 'pursuing', 'idk', 'closure', 'highschool'], ['family', 'dad', 'mom', 'years', 'year']]

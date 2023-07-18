@@ -1,0 +1,5 @@
+Results for 6: 
+coherence: 0.12240756021906506 
+diversity: 1.0 
+
+[['day', 'mom', 'family', 'miss', 'home'], ['tl', 'dr', 'relationship', 'told', 'friends'], ['feel', 'want', 'things', 'really', 'love'], ['angry', 'shit', 'anger', 'fucking', 'playing'], ['listened', 'birth', 'acquaintances', 'wishes', 'conflicted'], ['panic', 'anxiety', 'anxious', 'weeks', 'chest']]

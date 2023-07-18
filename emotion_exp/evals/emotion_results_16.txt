@@ -1,0 +1,5 @@
+Results for 16: 
+coherence: 0.11418860701503722 
+diversity: 0.9875 
+
+[['want', 'hate', 'ca', 'life', 'parents'], ['world', 'truly', 'wish', 'hurts', 'smile'], ['really', 'school', 'friends', 'im', 'year'], ['relationship', 'months', 'tl', 'dr', 'boyfriend'], ['freedom', 'license', 'unfortunately', 'believing', 'lack'], ['fuck', 'fucking', 'shit', 'car', 'ass'], ['said', 'girl', 'told', 'date', 'went'], ['day', 'time', 'miss', 'home', 'crying'], ['work', 'job', 'sleep', 'anxious', 'eat'], ['feel', 'people', 'think', 'really', 'talk'], ['anxiety', 'doctor', 'panic', 'attacks', 'heart'], ['anger', 'angry', 'control', 'rage', 'mad'], ['dad', 'family', 'mom', 'sister', 'friend'], ['passed', 'away', 'baby', 'loss', 'husband'], ['guys', 'female', 'attractive', 'women', 'weird'], ['dream', 'woke', 'laid', 'nights', 'eyes']]

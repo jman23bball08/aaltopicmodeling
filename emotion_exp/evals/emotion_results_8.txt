@@ -1,0 +1,5 @@
+Results for 8: 
+coherence: 0.07732814685710324 
+diversity: 0.975 
+
+[['feel', 'love', 'want', 'life', 'person'], ['tests', 'experience', 'read', 'looking', 'introvert'], ['dad', 'mom', 'miss', 'day', 'years'], ['anxiety', 'work', 'panic', 'job', 'help'], ['angry', 'fucking', 'shit', 'fuck', 'anger'], ['introvert', 'gifts', 'clarify', 'accepting', 'drama'], ['friends', 'really', 'people', 'im', 'na'], ['tl', 'dr', 'guy', 'relationship', 'girl']]

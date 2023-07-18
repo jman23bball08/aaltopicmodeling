@@ -1,0 +1,5 @@
+Results for 3: 
+coherence: 0.04762732371748679 
+diversity: 1.0 
+
+[['starting', 'uncomfortable', 'attention', 'deal', 'partner'], ['really', 'want', 'friends', 'time', 'feel'], ['heart', 'wife', 'took', 'cancer', 'lost']]

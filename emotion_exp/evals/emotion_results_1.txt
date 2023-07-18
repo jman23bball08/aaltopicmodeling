@@ -1,0 +1,5 @@
+Results for 1: 
+coherence: 0.0222973100593457 
+diversity: 1.0 
+
+[['gave', 'maybe', 'fall', 'bridge', 'function']]

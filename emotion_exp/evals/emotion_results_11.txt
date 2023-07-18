@@ -1,0 +1,5 @@
+Results for 11: 
+coherence: 0.07961845717666365 
+diversity: 0.9454545454545454 
+
+[['anger', 'things', 'angry', 'rage', 'issues'], ['friendships', 'motivated', 'introvert', 'ldr', 'genuinely'], ['talking', 'girl', 'guys', 'guy', 'dr'], ['friends', 'really', 'friend', 'school', 'said'], ['special', 'tears', 'death', 'dream', 'young'], ['fucking', 'car', 'fuck', 'damn', 'shit'], ['day', 'lost', 'ago', 'old', 'pain'], ['anxiety', 'panic', 'doctor', 'attack', 'anxious'], ['feel', 'want', 'people', 'hate', 'im'], ['family', 'parents', 'told', 'mom', 'want'], ['time', 'relationship', 'love', 'feel', 'want']]

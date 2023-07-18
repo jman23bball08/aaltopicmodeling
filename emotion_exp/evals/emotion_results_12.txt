@@ -1,0 +1,5 @@
+Results for 12: 
+coherence: 0.12619817652978743 
+diversity: 0.95 
+
+[['friend', 'friends', 'girl', 'guy', 'tl'], ['feel', 'life', 'sad', 'time', 'think'], ['mind', 'worry', 'does', 'start', 'dealing'], ['anxiety', 'panic', 'work', 'anxious', 'attacks'], ['anger', 'angry', 'things', 'people', 'control'], ['got', 'weeks', 'went', 'told', 'said'], ['walking', 'numb', 'separate', 'dream', 'waiting'], ['friends', 'family', 'parents', 'home', 'years'], ['relationship', 'love', 'want', 'tl', 'girlfriend'], ['passed', 'old', 'died', 'dog', 'grief'], ['fucking', 'fuck', 'hate', 'im', 'people'], ['career', 'expressing', 'community', 'senior', 'gifts']]

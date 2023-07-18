@@ -1,0 +1,5 @@
+Results for 20: 
+coherence: 0.12258252537210658 
+diversity: 0.85 
+
+[['girl', 'said', 'asked', 'friend', 'went'], ['feel', 'day', 'think', 'time', 'felt'], ['people', 'im', 'think', 'sad', 'make'], ['anxiety', 'panic', 'medication', 'disorder', 'anxious'], ['sub', 'ok', 'downhill', 'bullied', 'teen'], ['dr', 'tl', 'sex', 'long', 'relationship'], ['friends', 'school', 'really', 'high', 'work'], ['miscarriage', 'bleeding', 'pregnancy', 'weeks', 'baby'], ['driver', 'driving', 'shopping', 'store', 'car'], ['friend', 'friends', 'relationship', 'love', 'feelings'], ['eat', 'sleep', 'asleep', 'sleeping', 'noise'], ['forever', 'memories', 'rest', 'miss', 'dreams'], ['home', 'vet', 'dog', 'day', 'cat'], ['feel', 'help', 'things', 'job', 'work'], ['family', 'years', 'dad', 'mother', 'father'], ['mom', 'said', 'told', 'tell', 'wife'], ['fucking', 'fuck', 'shit', 'hate', 'tired'], ['love', 'want', 'life', 'hate', 'world'], ['angry', 'anger', 'things', 'control', 'getting'], ['months', 'relationship', 'time', 'long', 'things']]
