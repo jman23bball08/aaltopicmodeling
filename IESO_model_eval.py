@@ -9,6 +9,7 @@ import os
 import pyro
 import topic_metrics
 import emoji
+import evaluation_metrics
 
 assert pyro.__version__.startswith('1.8.5')
 # Enable smoke test - run the notebook cells on CI.
@@ -18,6 +19,7 @@ posts = []
 with open("IESOposts.txt", "r") as f:
     for line in f:
         posts.append(line.strip())
+
 
 def process(text):
     #tokenize text
@@ -33,7 +35,7 @@ def process(text):
     return tokens
 
 #apply to each post
-processed_posts = [process(post) for post in posts]
+processed_posts = [process(post) for post in posts if len(process(post)) > 0]
 #print(processed_posts)
 
 vectorizer = CountVectorizer(max_df=0.5, min_df=20, stop_words='english')
@@ -42,7 +44,9 @@ docs = torch.from_numpy(vectorizer.fit_transform([" ".join(post) for post in pro
 vocab = pd.DataFrame(columns=['word', 'index'])
 vocab['word'] = vectorizer.get_feature_names_out()
 vocab['index'] = vocab.index
-#print(vocab)
+
+print('Dictionary size: %d' % len(vocab))
+print('Corpus size: {}'.format(docs.shape))
 
 max_coh = -1
 max_ind = 1
@@ -109,41 +113,58 @@ with open(load_model, "rb") as f:
 
 # plot word cloud
 
-def plot_word_cloud(b, ax, v, n):
-    sorted_, indices = torch.sort(b, descending=True)
-    df = pd.DataFrame(indices[:100].numpy(), columns=['index'])
-    words = pd.merge(df, vocab[['index', 'word']],
-                        how='left', on='index')['word'].values.tolist()
-    #sizes = (sorted_[:100] * 1000).int().numpy().tolist()
-    sizes = (abs(sorted_[:100]) * 1000).int().numpy().tolist()
-    freqs = {words[i]: sizes[i] for i in range(len(words))}
+# def plot_word_cloud(b, ax, v, n):
+#     sorted_, indices = torch.sort(b, descending=True)
+#     df = pd.DataFrame(indices[:100].numpy(), columns=['index'])
+#     words = pd.merge(df, vocab[['index', 'word']],
+#                         how='left', on='index')['word'].values.tolist()
+#     #sizes = (sorted_[:100] * 1000).int().numpy().tolist()
+#     sizes = (abs(sorted_[:100]) * 1000).int().numpy().tolist()
+#     freqs = {words[i]: sizes[i] for i in range(len(words))}
 
-    # print("Words:", words)
-    # print("Sizes:", sizes)
+#     # print("Words:", words)
+#     # print("Sizes:", sizes)
 
-    # print("Frequencies:", freqs)
+#     # print("Frequencies:", freqs)
 
-    # for word, freq in freqs.items():
-    #     if freq <= 0 or not isinstance(freq, int):
-    #         print(f"Invalid frequency: {word}: {freq}")
+#     # for word, freq in freqs.items():
+#     #     if freq <= 0 or not isinstance(freq, int):
+#     #         print(f"Invalid frequency: {word}: {freq}")
 
 
-    wc = WordCloud(background_color="white", width=800, height=500, font_path='/Library/Fonts/Arial.ttf')
-    wc = wc.generate_from_frequencies(freqs)
-    ax.set_title('Topic %d' % (n + 1))
-    ax.imshow(wc, interpolation='bilinear')
-    ax.axis("off")
+#     wc = WordCloud(background_color="white", width=800, height=500, font_path='/Library/Fonts/Arial.ttf')
+#     wc = wc.generate_from_frequencies(freqs)
+#     ax.set_title('Topic %d' % (n + 1))
+#     ax.imshow(wc, interpolation='bilinear')
+#     ax.axis("off")
 
-if not smoke_test:
-    import matplotlib.pyplot as plt
-    from wordcloud import WordCloud
-    beta = prodLDA.beta()
-    fig, axs = plt.subplots(7, 3, figsize=(14, 24))
-    for n in range(beta.shape[0]):
-        i, j = divmod(n, 3)
-        plot_word_cloud(beta[n], axs[i, j], vocab, n)
-    axs[-1, -1].axis('off');
+# if not smoke_test:
+#     import matplotlib.pyplot as plt
+#     from wordcloud import WordCloud
+#     beta = prodLDA.beta()
+#     fig, axs = plt.subplots(7, 3, figsize=(14, 24))
+#     for n in range(beta.shape[0]):
+#         i, j = divmod(n, 3)
+#         plot_word_cloud(beta[n], axs[i, j], vocab, n)
+#     axs[-1, -1].axis('off');
 
-    plt.show()
+#     plt.show()
 
 #print(max_ind, max_coh)
+
+docs = docs.float()
+print(docs.shape)
+ppx = evaluation_metrics.compute_perplexity(prodLDA, docs)
+print(ppx)
+
+overall_topic_distribution = evaluation_metrics.get_overall_topic_distribution(prodLDA, docs)
+print("Overall Topic Distribution:")
+print(overall_topic_distribution)
+
+all_topic_distributions = evaluation_metrics.encode_documents(prodLDA, docs)
+print("Encoded Topic Distributions for Each Document:")
+# print(all_topic_distributions)
+# print("Topic Distributions:")
+# print(all_topic_distributions[0])
+# print("Associated Words:")
+# print(topic_words[0])
