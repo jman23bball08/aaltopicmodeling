@@ -4,6 +4,7 @@ import pyro.distributions as dist
 import torch.nn.functional as F
 import math
 import pandas as pd
+import numpy as np
 
 
 def get_overall_topic_distribution(model, data):
@@ -27,11 +28,12 @@ def encode_documents(model, data):
     all_topic_distributions = torch.cat(all_topic_distributions, dim=0)
 
     # Map the topic probabilities to actual words in the vocabulary
-    # vocab = pd.DataFrame(columns=['word', 'index'])
-    # topic_words = []
-    # for topic_probs in all_topic_distributions:
-    #     topic_indices = torch.argsort(topic_probs, descending=True)
-    #     topic_words.append([vocab[word_idx.item()] for word_idx in topic_indices])
+    vocab = pd.DataFrame(columns=['word', 'index'])
+    topic_words = []
+    for topic_probs in all_topic_distributions:
+        topic_indices = torch.argsort(topic_probs, descending=True)
+        # pulling out
+        topic_words.append([vocab[word_idx.item()] for word_idx in topic_indices])
 
     return all_topic_distributions #, topic_words
 
@@ -81,5 +83,27 @@ def compute_perplexity(model, data, num_samples=10):
     # Compute perplexity
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(total_cross_ent, total_words)
-    perplexity = math.exp(-total_cross_ent / total_words)
+    perplexity = math.exp(total_cross_ent / total_words)
     return perplexity
+
+def get_exemplar_documents(model, docs, posts, vocab, top_n=1, top_words_n=5):
+    beta_matrix = model.beta().detach().numpy()  # Get the topic-word distribution from the trained model
+    doc_topic_probs = np.dot(docs, beta_matrix.T)  # Calculate document-topic probabilities
+
+    num_topics = beta_matrix.shape[0]
+
+    exemplar_documents_per_topic = []
+    top_words_per_topic = []
+    for topic_idx in range(num_topics):
+        topic_probs = doc_topic_probs[:, topic_idx]
+        top_doc_indices = np.argsort(topic_probs)[::-1][:top_n]
+        exemplar_documents = [posts[idx] for idx in top_doc_indices]
+        exemplar_documents_per_topic.append(exemplar_documents)
+
+        # Get the top words for the current topic
+        topic_words_probs = beta_matrix[topic_idx, :]
+        top_word_indices = np.argsort(topic_words_probs)[::-1][:top_words_n]
+        top_words = [vocab[word_idx.item()] for word_idx in top_word_indices]
+        top_words_per_topic.append(top_words)
+
+    return exemplar_documents_per_topic, top_words_per_topic
